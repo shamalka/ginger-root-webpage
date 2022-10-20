@@ -14,10 +14,13 @@ function Home() {
     const formik = useFormik({
         initialValues: {
             name: '',
-            lastName: ''
+            lastName: '',
+            company: '',
+            country: '',
+            email: ''
         },
         onSubmit: values => {
-            alert(JSON.stringify(values, null, 2));
+            console.log(values)
         },
     });
 
